@@ -7,8 +7,6 @@ The PubSub software uses a [Nodejs] ( http://nodejs.org/ ) package
 Rather than connect to an instrument to publish data software was developed 
 to publish prime numbers to the iPhone simulator.
 
-
-
 # Software
  
 * Operating System : Mac OS 10.8 ( Mountain Lion )
@@ -18,10 +16,7 @@ to publish prime numbers to the iPhone simulator.
 * [ MQTT.js ]( https://github.com/adamvr/MQTT.js/ ) 
 * MQTT Client SDK for Objective-C] ( https://github.com/m2mIO/mqttIO-objC )
 
-
-
-# Installing Software
-
+# Installing 
 
 
 # Thanks

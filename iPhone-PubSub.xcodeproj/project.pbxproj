@@ -21,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0159B961796E143007E7D51 /* server.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = server.js; sourceTree = "<group>"; };
 		E0A6973E1796DC3F004D1CF2 /* iPhone-PubSub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iPhone-PubSub.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0A697411796DC3F004D1CF2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		E0A697431796DC3F004D1CF2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,10 +55,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0159B951796E09C007E7D51 /* server */ = {
+			isa = PBXGroup;
+			children = (
+				E0159B961796E143007E7D51 /* server.js */,
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
 		E0A697351796DC3F004D1CF2 = {
 			isa = PBXGroup;
 			children = (
-				E0A697661796DCFA004D1CF2 /* server */,
+				E0159B951796E09C007E7D51 /* server */,
 				E0A697641796DCB7004D1CF2 /* README.markdown */,
 				E0A697471796DC3F004D1CF2 /* iPhone-PubSub */,
 				E0A697401796DC3F004D1CF2 /* Frameworks */,
@@ -108,13 +117,6 @@
 				E0A697571796DC3F004D1CF2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		E0A697661796DCFA004D1CF2 /* server */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +310,7 @@
 				E0A697631796DC3F004D1CF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
