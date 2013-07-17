@@ -18,6 +18,7 @@
 		E0A697581796DC3F004D1CF2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E0A697571796DC3F004D1CF2 /* Default-568h@2x.png */; };
 		E0A6975B1796DC3F004D1CF2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A697591796DC3F004D1CF2 /* MainStoryboard.storyboard */; };
 		E0A6975E1796DC3F004D1CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A6975D1796DC3F004D1CF2 /* ViewController.m */; };
+		E0A697651796DCB7004D1CF2 /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = E0A697641796DCB7004D1CF2 /* README.markdown */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E0A6975A1796DC3F004D1CF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E0A6975C1796DC3F004D1CF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E0A6975D1796DC3F004D1CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0A697641796DCB7004D1CF2 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,8 @@
 		E0A697351796DC3F004D1CF2 = {
 			isa = PBXGroup;
 			children = (
+				E0A697661796DCFA004D1CF2 /* server */,
+				E0A697641796DCB7004D1CF2 /* README.markdown */,
 				E0A697471796DC3F004D1CF2 /* iPhone-PubSub */,
 				E0A697401796DC3F004D1CF2 /* Frameworks */,
 				E0A6973F1796DC3F004D1CF2 /* Products */,
@@ -105,6 +109,13 @@
 				E0A697571796DC3F004D1CF2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0A697661796DCFA004D1CF2 /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				E0A697561796DC3F004D1CF2 /* Default@2x.png in Resources */,
 				E0A697581796DC3F004D1CF2 /* Default-568h@2x.png in Resources */,
 				E0A6975B1796DC3F004D1CF2 /* MainStoryboard.storyboard in Resources */,
+				E0A697651796DCB7004D1CF2 /* README.markdown in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
