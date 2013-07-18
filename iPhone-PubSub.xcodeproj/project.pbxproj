@@ -36,8 +36,8 @@
 		E0A697551796DC3F004D1CF2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		E0A697571796DC3F004D1CF2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		E0A6975A1796DC3F004D1CF2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E0A6975C1796DC3F004D1CF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E0A6975D1796DC3F004D1CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E0A6975C1796DC3F004D1CF2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../ViewController.h; sourceTree = "<group>"; };
+		E0A6975D1796DC3F004D1CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		E0A697641796DCB7004D1CF2 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +61,23 @@
 				E0159B961796E143007E7D51 /* server.js */,
 			);
 			path = server;
+			sourceTree = "<group>";
+		};
+		E09974971798303500CD9A16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0A6975C1796DC3F004D1CF2 /* ViewController.h */,
+				E0A6975D1796DC3F004D1CF2 /* ViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E0997498179830E200CD9A16 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E0A697591796DC3F004D1CF2 /* MainStoryboard.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		E0A697351796DC3F004D1CF2 = {
@@ -95,11 +112,10 @@
 		E0A697471796DC3F004D1CF2 /* iPhone-PubSub */ = {
 			isa = PBXGroup;
 			children = (
+				E0997498179830E200CD9A16 /* Resources */,
+				E09974971798303500CD9A16 /* Controllers */,
 				E0A697501796DC3F004D1CF2 /* AppDelegate.h */,
 				E0A697511796DC3F004D1CF2 /* AppDelegate.m */,
-				E0A697591796DC3F004D1CF2 /* MainStoryboard.storyboard */,
-				E0A6975C1796DC3F004D1CF2 /* ViewController.h */,
-				E0A6975D1796DC3F004D1CF2 /* ViewController.m */,
 				E0A697481796DC3F004D1CF2 /* Supporting Files */,
 			);
 			path = "iPhone-PubSub";
@@ -208,6 +224,7 @@
 				E0A6975A1796DC3F004D1CF2 /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
