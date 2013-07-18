@@ -2,9 +2,9 @@
 
 Exploring the technology required for iOS to use [ PubSub ] ( http://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern ). 
 The PubSub software uses a [Nodejs] ( http://nodejs.org/ ) package 
-[ MQTT.js ]( https://github.com/adamvr/MQTT.js/) and [MQTT Client SDK for Objective-C] ( https://github.com/m2mIO/mqttIO-objC ).
+[ MQTT.js ]( https://github.com/adamvr/MQTT.js/) and [ MQTT Client SDK for Objective-C ] ( https://github.com/m2mIO/mqttIO-objC ) for the iPhone.
 
-Rather than connect to an instrument to publish data software was developed 
+Rather than connect to an instrument to publish data, software was developed 
 to publish prime numbers to the iPhone simulator.
 
 # Software
@@ -14,9 +14,15 @@ to publish prime numbers to the iPhone simulator.
 * Node Package Manager ( NPM ) : v1.2.14 
 * XCode version 4.6.3
 * [ MQTT.js ]( https://github.com/adamvr/MQTT.js/ ) 
-* MQTT Client SDK for Objective-C] ( https://github.com/m2mIO/mqttIO-objC )
+* [ MQTT Client SDK for Objective-C] ( https://github.com/m2mIO/mqttIO-objC )
 
-# Installing 
+
+## Installation of mqtt
+
+    npm install mqtt
+
+## Run
+
 
 
 # Thanks
