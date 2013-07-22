@@ -17,7 +17,7 @@ to publish prime numbers to the iPhone simulator.
 * [ MQTT Client SDK for Objective-C] ( https://github.com/m2mIO/mqttIO-objC )
 
 
-## Installation of mqtt
+## Installation of MQTT.js
 
     npm install mqtt
 
@@ -26,4 +26,6 @@ to publish prime numbers to the iPhone simulator.
 
 
 # Thanks
+
+Many people to thank, however a special mention to [ Adam Rudd ] ( https://github.com/adamvr ) whose examples on [ MQTT.js ]( https://github.com/adamvr/MQTT.js/ ) was a great starting point to develop the server ( or broker ) for the PubSub.
 
