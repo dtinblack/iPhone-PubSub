@@ -12,13 +12,13 @@ mqtt.createServer(function(client) {
                             client.id = packet.clientId;
                             console.log("CONNECT: client id: " + client.id);
                             self.clients[client.id] = client;
-                            });
+        });
                   
         client.on('publish', function(packet) {
                             for (var k in self.clients) {
                             self.clients[k].publish({topic: packet.topic, payload: packet.payload});
                             }
-                            });
+        });
                   
         client.on('subscribe', function(packet) {
                             var granted = [];
@@ -30,23 +30,23 @@ mqtt.createServer(function(client) {
                             }
                             
                             client.suback({granted: granted});
-                            });
+        });
        
         client.on('pingreq', function(packet) {
                             client.pingresp();
-                            });
+        });
 
                   
         client.on('disconnect', function(packet) {
                             client.stream.end();
-                            });
+        });
                   
         client.on('close', function(err) {
                             delete self.clients[client.id];
-                            });
+        });
                   
         client.on('error', function(err) {
                             client.stream.end();
                             console.log('error: ' + err);
-                            });
+        });
 }).listen(1883);

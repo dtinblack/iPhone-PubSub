@@ -1,4 +1,4 @@
-// Subscribe to the broker to recieve the published messages
+// Subscribe to the broker to recieve the published messages - test
 
 var mqtt = require('mqtt')
   , client = mqtt.createClient();
