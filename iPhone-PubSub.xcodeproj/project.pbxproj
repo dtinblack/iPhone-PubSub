@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E085B4A3179D6A0600E90E0A /* subscribe.js in Sources */ = {isa = PBXBuildFile; fileRef = E085B4A2179D6A0600E90E0A /* subscribe.js */; };
-		E085B4A5179D6A0F00E90E0A /* publish.js in Sources */ = {isa = PBXBuildFile; fileRef = E085B4A4179D6A0F00E90E0A /* publish.js */; };
 		E099749A1798347400CD9A16 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E09974991798347400CD9A16 /* icon.png */; };
 		E099749C179835E100CD9A16 /* RetinaIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = E099749B179835E100CD9A16 /* RetinaIcon.png */; };
 		E0A697421796DC3F004D1CF2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A697411796DC3F004D1CF2 /* UIKit.framework */; };
@@ -222,8 +220,6 @@
 				E0A6974E1796DC3F004D1CF2 /* main.m in Sources */,
 				E0A697521796DC3F004D1CF2 /* AppDelegate.m in Sources */,
 				E0A6975E1796DC3F004D1CF2 /* ViewController.m in Sources */,
-				E085B4A3179D6A0600E90E0A /* subscribe.js in Sources */,
-				E085B4A5179D6A0F00E90E0A /* publish.js in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
