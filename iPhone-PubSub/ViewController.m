@@ -21,13 +21,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-    
-    
+        
     // Initialise the arrays
     
     messageArray = [[NSMutableArray alloc] init];
-
     
     // load message array to test interface
     
