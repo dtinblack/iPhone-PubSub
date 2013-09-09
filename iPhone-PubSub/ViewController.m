@@ -67,7 +67,24 @@
     return cell;
 }
 
-
+#pragma mark - MQTT Callback methods
+- (void) session:(MQTTSession *)session handleEvent:(MQTTSessionEvent)eventCode {
+    
+    //TODO
+    
+    switch (eventCode){
+        case MQTTSessionEventConnected:
+            NSLog(@"connected");
+            break;
+            
+            
+        default:
+            break;
+    }
+    
+    
+    
+}
 
 
 @end

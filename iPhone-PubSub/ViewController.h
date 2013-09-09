@@ -7,16 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MQTTSession.h"
 
 @interface ViewController : UIViewController<UITableViewDataSource,
                             UITableViewDelegate> {
                                 
             NSMutableArray *messageArray;
+            MQTTSession *session;
     
 }
 
 
 @property(weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property(weak, nonatomic) IBOutlet UITableView *messageTable;
+
+#pragma mark - MQTT Callback methods
+- (void) session:(MQTTSession *)session handleEvent:(MQTTSessionEvent)eventCode;
 
 @end

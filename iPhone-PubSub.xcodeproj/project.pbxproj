@@ -21,6 +21,8 @@
 		E0A6975B1796DC3F004D1CF2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A697591796DC3F004D1CF2 /* MainStoryboard.storyboard */; };
 		E0A6975E1796DC3F004D1CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A6975D1796DC3F004D1CF2 /* ViewController.m */; };
 		E0C94744179D14FD00222EB7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0C94743179D14FD00222EB7 /* LICENSE */; };
+		E0DEE08B17DE05EC00F5F966 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DEE08A17DE05EC00F5F966 /* libMqttSDK.a */; };
+		E0DEE09417DE05F400F5F966 /* libMqttSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0DEE09317DE05F400F5F966 /* libMqttSDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,18 @@
 		E0A6975D1796DC3F004D1CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		E0A697641796DCB7004D1CF2 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		E0C94743179D14FD00222EB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E0DEE08517DE05EC00F5F966 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
+		E0DEE08617DE05EC00F5F966 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
+		E0DEE08717DE05EC00F5F966 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
+		E0DEE08817DE05EC00F5F966 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
+		E0DEE08917DE05EC00F5F966 /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQttTxFlow.h; sourceTree = "<group>"; };
+		E0DEE08A17DE05EC00F5F966 /* libMqttSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMqttSDK.a; sourceTree = "<group>"; };
+		E0DEE08E17DE05F400F5F966 /* MQTTDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTDecoder.h; sourceTree = "<group>"; };
+		E0DEE08F17DE05F400F5F966 /* MQTTEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTEncoder.h; sourceTree = "<group>"; };
+		E0DEE09017DE05F400F5F966 /* MQTTMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTMessage.h; sourceTree = "<group>"; };
+		E0DEE09117DE05F400F5F966 /* MQTTSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQTTSession.h; sourceTree = "<group>"; };
+		E0DEE09217DE05F400F5F966 /* MQttTxFlow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQttTxFlow.h; sourceTree = "<group>"; };
+		E0DEE09317DE05F400F5F966 /* libMqttSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libMqttSDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +71,8 @@
 				E0A697421796DC3F004D1CF2 /* UIKit.framework in Frameworks */,
 				E0A697441796DC3F004D1CF2 /* Foundation.framework in Frameworks */,
 				E0A697461796DC3F004D1CF2 /* CoreGraphics.framework in Frameworks */,
+				E0DEE08B17DE05EC00F5F966 /* libMqttSDK.a in Frameworks */,
+				E0DEE09417DE05F400F5F966 /* libMqttSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +168,52 @@
 		E0CFA64E17DE018900F9274D /* mqtt-lib */ = {
 			isa = PBXGroup;
 			children = (
+				E0DEE08C17DE05F400F5F966 /* MqttSDK-Release-armv7s */,
+				E0DEE08317DE05EC00F5F966 /* MqttSDK-Debug-armv7s */,
 			);
 			path = "mqtt-lib";
+			sourceTree = "<group>";
+		};
+		E0DEE08317DE05EC00F5F966 /* MqttSDK-Debug-armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08417DE05EC00F5F966 /* include */,
+				E0DEE08A17DE05EC00F5F966 /* libMqttSDK.a */,
+			);
+			path = "MqttSDK-Debug-armv7s";
+			sourceTree = "<group>";
+		};
+		E0DEE08417DE05EC00F5F966 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08517DE05EC00F5F966 /* MQTTDecoder.h */,
+				E0DEE08617DE05EC00F5F966 /* MQTTEncoder.h */,
+				E0DEE08717DE05EC00F5F966 /* MQTTMessage.h */,
+				E0DEE08817DE05EC00F5F966 /* MQTTSession.h */,
+				E0DEE08917DE05EC00F5F966 /* MQttTxFlow.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E0DEE08C17DE05F400F5F966 /* MqttSDK-Release-armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08D17DE05F400F5F966 /* include */,
+				E0DEE09317DE05F400F5F966 /* libMqttSDK.a */,
+			);
+			path = "MqttSDK-Release-armv7s";
+			sourceTree = "<group>";
+		};
+		E0DEE08D17DE05F400F5F966 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08E17DE05F400F5F966 /* MQTTDecoder.h */,
+				E0DEE08F17DE05F400F5F966 /* MQTTEncoder.h */,
+				E0DEE09017DE05F400F5F966 /* MQTTMessage.h */,
+				E0DEE09117DE05F400F5F966 /* MQTTSession.h */,
+				E0DEE09217DE05F400F5F966 /* MQttTxFlow.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +376,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-PubSub/iPhone-PubSub-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-PubSub/iPhone-PubSub-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Debug-armv7s\"",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Release-armv7s\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -327,6 +392,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-PubSub/iPhone-PubSub-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-PubSub/iPhone-PubSub-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Debug-armv7s\"",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Release-armv7s\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
