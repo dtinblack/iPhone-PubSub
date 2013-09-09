@@ -22,6 +22,7 @@
 		E0A6975E1796DC3F004D1CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A6975D1796DC3F004D1CF2 /* ViewController.m */; };
 		E0C94744179D14FD00222EB7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0C94743179D14FD00222EB7 /* LICENSE */; };
 		E0CFA65017DE018900F9274D /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0CFA64F17DE018900F9274D /* test.txt */; };
+		E0CFA65217DE028500F9274D /* Another File.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0CFA65117DE028500F9274D /* Another File.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		E0A697641796DCB7004D1CF2 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		E0C94743179D14FD00222EB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		E0CFA64F17DE018900F9274D /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
+		E0CFA65117DE028500F9274D /* Another File.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Another File.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		E0CFA64E17DE018900F9274D /* mqtt-lib */ = {
 			isa = PBXGroup;
 			children = (
+				E0CFA65117DE028500F9274D /* Another File.txt */,
 				E0CFA64F17DE018900F9274D /* test.txt */,
 			);
 			path = "mqtt-lib";
@@ -219,6 +222,7 @@
 				E099749C179835E100CD9A16 /* RetinaIcon.png in Resources */,
 				E0C94744179D14FD00222EB7 /* LICENSE in Resources */,
 				E0CFA65017DE018900F9274D /* test.txt in Resources */,
+				E0CFA65217DE028500F9274D /* Another File.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
