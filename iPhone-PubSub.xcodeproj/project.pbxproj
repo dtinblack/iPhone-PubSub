@@ -21,6 +21,7 @@
 		E0A6975B1796DC3F004D1CF2 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0A697591796DC3F004D1CF2 /* MainStoryboard.storyboard */; };
 		E0A6975E1796DC3F004D1CF2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0A6975D1796DC3F004D1CF2 /* ViewController.m */; };
 		E0C94744179D14FD00222EB7 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E0C94743179D14FD00222EB7 /* LICENSE */; };
+		E0CFA64717DDF54B00F9274D /* test.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0CFA64617DDF54B00F9274D /* test.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		E0A6975D1796DC3F004D1CF2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../ViewController.m; sourceTree = "<group>"; };
 		E0A697641796DCB7004D1CF2 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		E0C94743179D14FD00222EB7 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E0CFA64617DDF54B00F9274D /* test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		E0A697351796DC3F004D1CF2 = {
 			isa = PBXGroup;
 			children = (
+				E0CFA64517DDF4A600F9274D /* mqtt-lib */,
 				E0C94743179D14FD00222EB7 /* LICENSE */,
 				E0159B951796E09C007E7D51 /* server */,
 				E0A697641796DCB7004D1CF2 /* README.markdown */,
@@ -146,6 +149,14 @@
 				E0A697571796DC3F004D1CF2 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0CFA64517DDF4A600F9274D /* mqtt-lib */ = {
+			isa = PBXGroup;
+			children = (
+				E0CFA64617DDF54B00F9274D /* test.txt */,
+			);
+			path = "mqtt-lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +218,7 @@
 				E099749A1798347400CD9A16 /* icon.png in Resources */,
 				E099749C179835E100CD9A16 /* RetinaIcon.png in Resources */,
 				E0C94744179D14FD00222EB7 /* LICENSE in Resources */,
+				E0CFA64717DDF54B00F9274D /* test.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
