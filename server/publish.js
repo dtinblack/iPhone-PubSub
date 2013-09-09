@@ -38,8 +38,6 @@ while ( prime < 10000 ) {
         found = 0;
     }
     
-    
-    
     if( mod( number, 1000 ) == 0 ) { // publish every 1000'th prime
         
         client.publish('messages', 'prime = ' + primes[prime], {retain: true} );
