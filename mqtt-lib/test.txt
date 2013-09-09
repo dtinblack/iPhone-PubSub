@@ -1,1 +1,1 @@
-Yet Another Test Case to check that this directory hasn't been uploaded to GitHub
+Checking that this directory hasn't been uploaded to GitHub
