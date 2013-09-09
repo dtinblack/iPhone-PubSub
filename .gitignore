@@ -3,5 +3,5 @@
 *xcuserdata
 *project.xcworkspace
 server/node_modules/*
-
+*mqtt-lib*
 
