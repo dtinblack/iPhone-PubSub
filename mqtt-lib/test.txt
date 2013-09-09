@@ -1,1 +1,0 @@
-Checking that this directory hasn't been uploaded to GitHub
