@@ -13,7 +13,9 @@
                             UITableViewDelegate> {
                                 
             NSMutableArray *messageArray;
-            MQTTSession *session;
+            MQTTSession *mySession;
+            BOOL connecting;
+            NSString *clientID;
     
 }
 

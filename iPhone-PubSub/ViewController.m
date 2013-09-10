@@ -22,18 +22,46 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
         
+   
+ 
+    // connect to PubSub server
+ 
+    // - generate a Client ID to be used to connect to the server
+ 
+     NSString *alphabet  = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXZY0123456789";
+     NSMutableString *client = [NSMutableString stringWithCapacity:5];
+     for (NSUInteger i = 0; i < 5; i++) {
+     u_int32_t r = arc4random() % [alphabet length];
+     unichar c = [alphabet characterAtIndex:r];
+     [client appendFormat:@"%C", c];
+
+     }
+      
+    clientID = client;
+ 
     // Initialise the arrays
-    
+ 
     messageArray = [[NSMutableArray alloc] init];
-    
+ 
     // load message array to test interface
-    
+ 
     [messageArray addObject:@"First Line"];
     [messageArray addObject:@"Second Line"];
     [messageArray addObject:@"Third Line"];
     [messageArray addObject:@"Fourth Line"];
-       
-    
+ 
+   // connect to the server
+ 
+    mySession = [[MQTTSession alloc] initWithClientId:clientID];
+ 
+    [mySession connectToHost:@"localhost" port:1883];
+ 
+    [mySession setDelegate:self];
+ 
+ 
+ 
+ 
+ 
     CGSize scrollContentSize = self.view.frame.size;
     self.scrollView.contentSize = scrollContentSize;
     
@@ -45,7 +73,6 @@
     // Dispose of any resources that can be recreated.
     
 }
-
 
 #pragma mark - Table View
 
@@ -76,8 +103,25 @@
         case MQTTSessionEventConnected:
             NSLog(@"connected");
             break;
+         case MQTTSessionEventConnectionRefused:
+            NSLog(@"connection refused");
+            break;
+         case MQTTSessionEventConnectionClosed:
+            NSLog(@"connection closed");
+            break;
+         case MQTTSessionEventConnectionError:
+            NSLog(@"connection error");
+            NSLog(@"reconnecting ....");
+            [mySession connectToHost:@"localhost" port:1883]; // specific connection to the local server
+            break;
+         case MQTTSessionEventProtocolError:
+            NSLog(@"protocol error");
             
             
+            
+            
+            
+ 
         default:
             break;
     }
