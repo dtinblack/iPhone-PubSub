@@ -16,6 +16,7 @@
             MQTTSession *mySession;
             BOOL connecting;
             NSString *clientID;
+            NSString *topicName;
     
 }
 
@@ -25,5 +26,6 @@
 
 #pragma mark - MQTT Callback methods
 - (void) session:(MQTTSession *)session handleEvent:(MQTTSessionEvent)eventCode;
+- (void) session:(MQTTSession *)session newMessage:(NSData *)data onTopic:(NSString *)topic;
 
 @end

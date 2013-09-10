@@ -43,14 +43,7 @@
  
     messageArray = [[NSMutableArray alloc] init];
  
-    // load message array to test interface
- 
-    [messageArray addObject:@"First Line"];
-    [messageArray addObject:@"Second Line"];
-    [messageArray addObject:@"Third Line"];
-    [messageArray addObject:@"Fourth Line"];
- 
-   // connect to the server
+    // connect to the server
  
     mySession = [[MQTTSession alloc] initWithClientId:clientID];
  
@@ -58,7 +51,13 @@
  
     [mySession setDelegate:self];
  
+   // set topic name
  
+    topicName = @"messages"; // not the best way but works
+ 
+   // subscribe
+ 
+   [mySession subscribeTopic:topicName];
  
  
  
@@ -117,17 +116,25 @@
          case MQTTSessionEventProtocolError:
             NSLog(@"protocol error");
             
-            
-            
-            
-            
- 
         default:
             break;
     }
     
     
     
+}
+
+- (void)session:(MQTTSession*)sender
+     newMessage:(NSData*)data
+        onTopic:(NSString*)topic {
+ NSLog(@"new message, %d bytes, topic=%@", [data length], topic);
+ NSString *payloadString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+ NSLog(@"data: %@ %@", payloadString,data);
+ [messageArray insertObject:payloadString atIndex:0];
+// [topicArray insertObject:topic atIndex:0];
+ [messageTable reloadData];
+ //[self newMessageReceived:payloadString Topic:topic];
+ 
 }
 
 
