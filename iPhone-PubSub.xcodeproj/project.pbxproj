@@ -57,6 +57,8 @@
 				E0A697421796DC3F004D1CF2 /* UIKit.framework in Frameworks */,
 				E0A697441796DC3F004D1CF2 /* Foundation.framework in Frameworks */,
 				E0A697461796DC3F004D1CF2 /* CoreGraphics.framework in Frameworks */,
+				E0DEE08B17DE05EC00F5F966 /* libMqttSDK.a in Frameworks */,
+				E0DEE09417DE05F400F5F966 /* libMqttSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +156,48 @@
 			children = (
 			);
 			path = "mqtt-lib";
+			sourceTree = "<group>";
+		};
+		E0DEE08317DE05EC00F5F966 /* MqttSDK-Debug-armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08417DE05EC00F5F966 /* include */,
+				E0DEE08A17DE05EC00F5F966 /* libMqttSDK.a */,
+			);
+			path = "MqttSDK-Debug-armv7s";
+			sourceTree = "<group>";
+		};
+		E0DEE08417DE05EC00F5F966 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08517DE05EC00F5F966 /* MQTTDecoder.h */,
+				E0DEE08617DE05EC00F5F966 /* MQTTEncoder.h */,
+				E0DEE08717DE05EC00F5F966 /* MQTTMessage.h */,
+				E0DEE08817DE05EC00F5F966 /* MQTTSession.h */,
+				E0DEE08917DE05EC00F5F966 /* MQttTxFlow.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E0DEE08C17DE05F400F5F966 /* MqttSDK-Release-armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08D17DE05F400F5F966 /* include */,
+				E0DEE09317DE05F400F5F966 /* libMqttSDK.a */,
+			);
+			path = "MqttSDK-Release-armv7s";
+			sourceTree = "<group>";
+		};
+		E0DEE08D17DE05F400F5F966 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E0DEE08E17DE05F400F5F966 /* MQTTDecoder.h */,
+				E0DEE08F17DE05F400F5F966 /* MQTTEncoder.h */,
+				E0DEE09017DE05F400F5F966 /* MQTTMessage.h */,
+				E0DEE09117DE05F400F5F966 /* MQTTSession.h */,
+				E0DEE09217DE05F400F5F966 /* MQttTxFlow.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +360,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-PubSub/iPhone-PubSub-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-PubSub/iPhone-PubSub-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Debug-armv7s\"",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Release-armv7s\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -327,6 +376,11 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPhone-PubSub/iPhone-PubSub-Prefix.pch";
 				INFOPLIST_FILE = "iPhone-PubSub/iPhone-PubSub-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Debug-armv7s\"",
+					"\"$(SRCROOT)/mqtt-lib/MqttSDK-Release-armv7s\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
