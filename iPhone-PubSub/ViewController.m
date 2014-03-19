@@ -127,7 +127,7 @@
 - (void)session:(MQTTSession*)sender
      newMessage:(NSData*)data
         onTopic:(NSString*)topic {
- NSLog(@"new message, %d bytes, topic=%@", [data length], topic);
+ NSLog(@"new message, %lu bytes, topic=%@", (unsigned long)[data length], topic);
  NSString *payloadString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
  NSLog(@"data: %@ %@", payloadString,data);
  [messageArray insertObject:payloadString atIndex:0];
