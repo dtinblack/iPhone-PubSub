@@ -37,3 +37,6 @@ to publish prime numbers to the iPhone simulator. The style of software is "make
 
 Many people to thank, however a special mention to [ Adam Rudd ] ( https://github.com/adamvr ) whose examples on [ MQTT.js ]( https://github.com/adamvr/MQTT.js/ ) was a great starting point to develop the server ( or broker ) for the PubSub. Also, [ 2lemetry ] ( http://www.2lemetry.com ) for making available their [ MQTT Client SDK for Objective-C ] ( https://github.com/m2mIO/mqttIO-objC ) and sample apps that gave me a lot of insight into PubSub.
 
+# Licence
+
+[See Licence](https://github.com/dtinblack/iPhone-PubSub/blob/master/LICENSE)
